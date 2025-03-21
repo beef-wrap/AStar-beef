@@ -6,7 +6,7 @@ DefaultNamespace = "AStar"
 
 [Configs.Debug.Win64]
 CLibType = "DynamicDebug"
-LibPaths = ["$(ProjectDir)\\libs\\debug\\astar.lib"]
+LibPaths = ["$(ProjectDir)\\libs\\debug\\windows_x64\\astar.lib"]
 
 [Configs.Release.Win64]
-LibPaths = ["$(ProjectDir)\\libs\\release\\astar.lib"]
+LibPaths = ["$(ProjectDir)\\libs\\release\\windows_x64\\astar.lib"]

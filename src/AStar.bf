@@ -47,7 +47,7 @@ public static class AStar
 		public function float(void* fromNode, void* toNode, void* context) pathCostHeuristic; // estimated cost to transition from the first node to the second node -- optional, uses 0 if not specified
 		public function c_int(size_t visitedCount, void* visitingNode, void* goalNode, void* context) earlyExit; // early termination, return 1 for success, -1 for failure, 0 to continue searching -- optional
 		public function c_int(void* node1, void* node2, void* context) nodeComparator; // must return a sort order for the nodes (-1, 0, 1) -- optional, uses memcmp if not specified
-	};
+	}
 
 	// use in the nodeNeighbors callback to return neighbors
 	[CLink] public static extern void ASNeighborListAdd(ASNeighborList* neighbors, void* node, float edgeCost);
