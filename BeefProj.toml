@@ -5,8 +5,7 @@ Name = "AStar-beef"
 DefaultNamespace = "AStar"
 
 [Configs.Debug.Win64]
-CLibType = "DynamicDebug"
-LibPaths = ["$(ProjectDir)\\libs\\windows\\astard.lib"]
+LibPaths = ["$(ProjectDir)\\libs\\windows\\x64\\astar_d.lib"]
 
 [Configs.Release.Win64]
-LibPaths = ["$(ProjectDir)\\libs\\windows\\astar.lib"]
+LibPaths = ["$(ProjectDir)\\libs\\windows\\x64\\astar.lib"]
