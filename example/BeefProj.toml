@@ -6,4 +6,8 @@ Name = "example"
 TargetType = "BeefGUIApplication"
 StartupObject = "example.Program"
 
+[Configs.Test.Win64]
+LibPaths = ["$(ProjectDir)\\..\\libs\\x86_64-windows-msvc\\astar_d.lib"]
+
 [Configs.Debug.Win64]
+LibPaths = ["$(ProjectDir)\\..\\libs\\x86_64-windows-msvc\\astar_d.lib"]

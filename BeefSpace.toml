@@ -1,5 +1,8 @@
 FileVersion = 1
-Projects = {AStar-beef = {Path = "."}, example = {Path = "example"}}
 
 [Workspace]
 StartupProject = "example"
+
+[Projects]
+AStar-beef = {Path = "."}
+example = {Path = "example"}

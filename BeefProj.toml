@@ -5,7 +5,46 @@ Name = "AStar-beef"
 DefaultNamespace = "AStar"
 
 [Configs.Debug.Win64]
-LibPaths = ["$(ProjectDir)\\libs\\windows\\x64\\astar_d.lib"]
+LibPaths = ["$(ProjectDir)\\libs\\x86_64-windows-msvc\\astar_d.lib"]
+
+[Configs.Debug.aarch64-windows-gnu]
+LibPaths = ["$(ProjectDir)\\libs\\x86_64-windows-gnu\\astar_d.lib"]
+
+[Configs.Debug.Linux64]
+LibPaths = ["$(ProjectDir)\\libs\\x86_64-linux-musl\\libastar_d.a"]
+
+[Configs.Debug.aarch64-linux-gnu]
+LibPaths = ["$(ProjectDir)\\libs\\aarch64-linux-gnu\\libastar_d.a"]
+
+[Configs.Debug.macOS]
+LibPaths = ["$(ProjectDir)\\libs\\aarch64-macos\\libastar_d.a"]
 
 [Configs.Release.Win64]
-LibPaths = ["$(ProjectDir)\\libs\\windows\\x64\\astar.lib"]
+LibPaths = ["$(ProjectDir)\\libs\\x86_64-windows-msvc\\astar.lib"]
+
+[Configs.Release.aarch64-windows-gnu]
+LibPaths = ["$(ProjectDir)\\libs\\x86_64-windows-gnu\\astar.lib"]
+
+[Configs.Release.Linux64]
+LibPaths = ["$(ProjectDir)\\libs\\x86_64-linux-musl\\libastar.a"]
+
+[Configs.Release.aarch64-linux-gnu]
+LibPaths = ["$(ProjectDir)\\libs\\aarch64-linux-gnu\\libastar.a"]
+
+[Configs.Release.macOS]
+LibPaths = ["$(ProjectDir)\\libs\\aarch64-macos\\libastar.a"]
+
+[Configs.Test.Win64]
+LibPaths = ["$(ProjectDir)\\libs\\x86_64-windows-msvc\\astar_d.lib"]
+
+[Configs.Test.aarch64-windows-gnu]
+LibPaths = ["$(ProjectDir)\\libs\\x86_64-windows-gnu\\astar_d.lib"]
+
+[Configs.Test.Linux64]
+LibPaths = ["$(ProjectDir)\\libs\\x86_64-linux-musl\\libastar_d.a"]
+
+[Configs.Test.aarch64-linux-gnu]
+LibPaths = ["$(ProjectDir)\\libs\\aarch64-linux-gnu\\libastar_d.a"]
+
+[Configs.Test.macOS]
+LibPaths = ["$(ProjectDir)\\libs\\aarch64-macos\\libastar_d.a"]

@@ -1,15 +1,11 @@
 using System;
-using System.Collections;
 using System.Diagnostics;
-using System.IO;
-using System.Interop;
-using System.Text;
+
+namespace AStar;
 
 using static AStar.AStar;
 
-namespace example;
-
-static class Program
+static
 {
 	const int blockSize = 50;
 	const int worldWidth = 20;
@@ -91,7 +87,9 @@ static class Program
 			nodeComparator = null
 		};
 
-	static int Main(params String[] args)
+
+	[Test]
+	public static void Test()
 	{
 		ASPath* path = ASPathCreate(&PathNodeSource, null, &pathFrom, &pathTo);
 
@@ -110,6 +108,10 @@ static class Program
 			}
 		}
 
-		return 0;
+		if (let n = (PathNode*)ASPathGetNode(path, 9))
+		{
+			Test.Assert(n.x == 7);
+			Test.Assert(n.y == 2);
+		}
 	}
 }
