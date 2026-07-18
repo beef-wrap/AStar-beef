@@ -10,8 +10,7 @@ public static class AStar
 	public struct ASNeighborList;
 	public struct ASPath;
 
-	[CRepr]
-	public struct ASPathNodeSource
+	[CRepr] public struct ASPathNodeSource
 	{
 		/// the size of the structure being used for the nodes - important since nodes are copied into the resulting path
 		public size_t  nodeSize;
